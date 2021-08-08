@@ -1,25 +1,18 @@
-import logo from "./logo.svg";
-import "./App.css";
-
+import { Route } from "react-router-dom";
+import Home from "./components/Home/Home.jsx";
+//import NavBar from "./components/NavBar/NavBar.jsx";
+import Contact from "./components/Contact/Contact.jsx";
+import Portfolio from "./components/Portfolio/Portfolio.jsx";
+import Resume from "./components/Resume/Resume.jsx";
+//<Route path="/" component={NavBar} />
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> y guardar para recargar.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
-        <h1>Hello World!</h1>
-      </header>
-    </div>
+    <>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/contact" component={Contact} />
+      <Route exact path="/resume" component={Resume} />
+      <Route exact path="/portfolio" component={Portfolio} />
+    </>
   );
 }
 
