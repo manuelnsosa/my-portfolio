@@ -1,59 +1,43 @@
 import React from "react";
-import UnderConstruction from "react-under-construction";
-import "react-under-construction/build/css/index.css";
-import styled from "styled-components";
+import { Document, Page, pdfjs } from "react-pdf";
+//import UnderConstruction from "react-under-construction";
 import NavBar from "../NavBar/NavBar";
-const StyledNavBar = styled.div`
-  z-index: 10;
-`;
-const Resume = () => (
-  <>
-    <StyledNavBar>
-      <NavBar />
-    </StyledNavBar>
+import StyledResume from "./styled";
+import { Text, View, StyleSheet } from "@react-pdf/renderer";
+import cv from "./cv.pdf";
 
-    <UnderConstruction
-      background={{
-        image:
-          "https://www.delt.net/wp-content/uploads/tips-for-learning-web-development.jpg",
-        textColor: "#fff",
-        overlay: {
-          color: "#000",
-          opacity: ".5",
-        },
-      }}
-      title={{
-        text: "Soon...",
-      }}
-      description={{
-        text: "Section under construction",
-        style: {
-          maxWidth: "440px",
-        },
-      }}
-      /* subscribe={{
-      placeholder: "Enter your email",
-      buttonText: "Subscribe",
-      onSubmit: (value) => {
-        console.log("user typed email :", value);
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
+const Resume = () => {
+  const styles = StyleSheet.create({
+    section: {
+      width: 200,
+      "@media max-width: 400": {
+        width: 300,
       },
-    }} */
-      links={[
-        /* {
-        url: "https://www.facebook.com/",
-        image: "https://image.flaticon.com/icons/svg/220/220200.svg",
-      },*/
-        {
-          url: "https://www.linkedin.com/in/manuelnsosa",
-          image: "https://image.flaticon.com/icons/svg/145/145807.svg",
-        },
-        {
-          url: "mailto:manuelsosa.ar@gmail.com",
-          image: "https://image.flaticon.com/icons/svg/321/321817.svg",
-        },
-      ]}
-    />
-  </>
-);
+      "@media orientation: landscape": {
+        width: 400,
+      },
+    },
+  });
+  return (
+    <StyledResume>
+      <NavBar />
+      <div className="btn-container">
+        <a
+          className="btn"
+          href="https://drive.google.com/file/d/1-P1RfOJii8IiqnvqN7-o9dhXeotV1Bml/view?usp=sharing"
+          target="_blank"
+          rel="noreferrer"
+        >
+          DOWNLOAD
+        </a>
+      </div>
+      <Document file={cv}>
+        <Page pageNumber={1}></Page>
+      </Document>
+    </StyledResume>
+  );
+};
 
 export default Resume;

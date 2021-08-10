@@ -20,7 +20,7 @@ export const Home = () => {
           </>
         )}
         {w > 768 && <h2>My name is Manuel Sosa</h2>}
-        <div class="contenedor">
+        <div className="contenedor">
           <h1>
             I am a Full Stack Developer <span>&#160;</span>
           </h1>
