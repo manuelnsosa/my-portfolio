@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
 const StyledResume = styled.div`
-  .react-pdf__Page__canvas {
+  .img-container {
+  }
+  img {
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    width: 70%;
   }
   .btn-container {
     margin-top: 40px;
@@ -27,12 +30,26 @@ const StyledResume = styled.div`
     text-align: center;
   }
   @media (max-width: 768px) {
-    .react-pdf__Page {
+    .img-container {
       display: flex;
       flex-flow: column wrap;
     }
-    .react-pdf__Page__canvas {
+    img {
       width: 100%;
+    }
+    .btn-container {
+      margin-top: 55px;
+      padding: 10px;
+      width: 100%;
+      text-align: center;
+    }
+    .btn {
+      border-radius: 5px;
+      padding: 5px;
+      font-size: 14px;
+      background: #91b3f6;
+      color: white;
+      font-weight: bold;
     }
   }
 

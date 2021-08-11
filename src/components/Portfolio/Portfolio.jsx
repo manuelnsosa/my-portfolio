@@ -8,7 +8,9 @@ export const Portfolio = () => {
       <NavBar />
       <StyledProjects>
         <h2>PORTFOLIO</h2>
-        <Projects />
+        <div className="container-projects">
+          <Projects />
+        </div>
       </StyledProjects>
     </>
   );

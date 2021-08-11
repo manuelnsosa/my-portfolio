@@ -4,8 +4,11 @@ const StyledProjects = styled.div`
   margin-top: 50px;
   margin-left: 30px;
   text-align: center;
-  display: flex;
-  flex-flow: row nowrap;
+  .container-projects {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
   div {
     margin: 0 auto;
     padding: 3px;

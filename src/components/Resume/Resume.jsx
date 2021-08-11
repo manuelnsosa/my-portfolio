@@ -1,25 +1,21 @@
 import React from "react";
-import { Document, Page, pdfjs } from "react-pdf";
+//import { Document, Page, pdfjs } from "react-pdf";
 //import UnderConstruction from "react-under-construction";
 import NavBar from "../NavBar/NavBar";
 import StyledResume from "./styled";
-import { Text, View, StyleSheet } from "@react-pdf/renderer";
-import cv from "./cv.pdf";
+/* import { useMediaQuery } from "react-responsive";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css"; */
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+import cv from "./cv.jpg";
+
+//pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const Resume = () => {
-  const styles = StyleSheet.create({
-    section: {
-      width: 200,
-      "@media max-width: 400": {
-        width: 300,
-      },
-      "@media orientation: landscape": {
-        width: 400,
-      },
-    },
-  });
+  /* const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-device-width: 1224px)",
+  }); */
+  /*   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+   */
   return (
     <StyledResume>
       <NavBar />
@@ -33,9 +29,19 @@ const Resume = () => {
           DOWNLOAD
         </a>
       </div>
-      <Document file={cv}>
-        <Page pageNumber={1}></Page>
-      </Document>
+      <img src={cv} alt="couldn't load" />
+      {/* 
+      width={700}
+      {isDesktopOrLaptop && (
+        <Document file={cv}>
+          <Page width={700} pageNumber={1}></Page>
+        </Document>
+      )}
+      {isTabletOrMobile && (
+        <Document file={cv}>
+          <Page width={320} pageNumber={1}></Page>
+        </Document>
+      )} */}
     </StyledResume>
   );
 };
