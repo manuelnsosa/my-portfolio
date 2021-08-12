@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/static/js/main.24f6851e.chunk.js",
-    "main.js.map": "/static/js/main.24f6851e.chunk.js.map",
+    "main.js": "/static/js/main.9b441c85.chunk.js",
+    "main.js.map": "/static/js/main.9b441c85.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e444d31b.js",
     "runtime-main.js.map": "/static/js/runtime-main.e444d31b.js.map",
     "static/js/2.cf4d8102.chunk.js": "/static/js/2.cf4d8102.chunk.js",
@@ -13,7 +13,7 @@
     "static/css/main.6dea0f05.chunk.css.map": "/static/css/main.6dea0f05.chunk.css.map",
     "static/js/2.cf4d8102.chunk.js.LICENSE.txt": "/static/js/2.cf4d8102.chunk.js.LICENSE.txt",
     "static/media/countryapp.bcd2ff2b.png": "/static/media/countryapp.bcd2ff2b.png",
-    "static/media/cv.6bf199d7.jpg": "/static/media/cv.6bf199d7.jpg",
+    "static/media/cv.1ec1a657.jpg": "/static/media/cv.1ec1a657.jpg",
     "static/media/ecommerce.6177a8af.png": "/static/media/ecommerce.6177a8af.png",
     "static/media/email.68157d96.svg": "/static/media/email.68157d96.svg",
     "static/media/github.d1bb13ce.svg": "/static/media/github.d1bb13ce.svg",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.e444d31b.js",
     "static/js/2.cf4d8102.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.24f6851e.chunk.js"
+    "static/js/main.9b441c85.chunk.js"
   ]
 }
