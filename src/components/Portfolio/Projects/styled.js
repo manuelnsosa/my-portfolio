@@ -69,7 +69,7 @@ const StyledProjects = styled.div`
   }
   @media (max-width: 768px) {
     width: 250px;
-    height: 280px;
+    height: 400px;
     justify-content: center;
     vertical-align: middle;
     margin-top: 30px;
@@ -79,6 +79,12 @@ const StyledProjects = styled.div`
       margin-bottom: 10px;
       margin-top: 10px;
       font-size: 1em;
+    }
+    label {
+      font-size: 0.8em;
+    }
+    h6 {
+      font-size: 0.9em;
     }
     img {
       width: 230px;
