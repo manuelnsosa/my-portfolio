@@ -11,13 +11,13 @@ const RightNavBar = ({ open }) => {
         </Link>
       </li>
       <li>
-        <Link to="/resume" style={{ textDecoration: "none" }}>
-          <h3>Resume</h3>
+        <Link to="/portfolio" style={{ textDecoration: "none" }}>
+          <h3>Portfolio</h3>
         </Link>
       </li>
       <li>
-        <Link to="/portfolio" style={{ textDecoration: "none" }}>
-          <h3>Portfolio</h3>
+        <Link to="/resume" style={{ textDecoration: "none" }}>
+          <h3>Resume</h3>
         </Link>
       </li>
       <li>
