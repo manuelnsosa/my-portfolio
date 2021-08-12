@@ -7,6 +7,7 @@ export const StyledNav = styled.div`
   align-items: center;
   justify-content: space-around;
   height: 3.5em;
+
   @media (max-width: 768px) {
     height: auto;
     top: 0;

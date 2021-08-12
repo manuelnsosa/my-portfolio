@@ -22,7 +22,7 @@ const Resume = () => {
       <div className="btn-container">
         <a
           className="btn"
-          href="https://drive.google.com/file/d/16s97FiuckvyyQ1sEZsNbgTCXrTisqXvT/view?usp=sharing"
+          href="https://drive.google.com/file/d/1656_51ECrMsGEyGr0DA7OMOXrlrURDi5/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
