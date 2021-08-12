@@ -4,13 +4,15 @@ const StyledProjects = styled.div`
   background-color: none;
   color: black;
   width: 350px;
-  height: 350px;
+  height: 500px;
   border-radius: 20px;
-  border: 1.4px solid grey;
+  /*  border: 1.4px solid grey; */
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   text-align: center;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   img {
     width: 330px;
     height: 220px;
@@ -20,26 +22,58 @@ const StyledProjects = styled.div`
   }
   a {
     border-radius: 5px;
-    margin-bottom: 5px;
-    width: 85%;
-    align-self: center;
-    background-color: black;
+    padding: 5px;
+    background: #91b3f6;
     color: white;
+    font-weight: bold;
+    width: 18%;
+    height: 30px;
+    text-decoration: none;
   }
   a:hover {
-    background-color: grey;
+    background: #ffb588;
   }
   a:focus {
-    background-color: grey;
+    background: #ffb588;
+  }
+  .a1 {
+    width: 50%;
+    margin-right: 10px;
+  }
+  .a2 {
+    margin-left: 10px;
+  }
+  .container-a {
+    display: flex;
+    flex-direction: row nowrap;
+    width: 100%;
+    justify-content: space-around;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 20px;
   }
   h3 {
     font-size: 22px;
+    color: grey;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+  }
+  h6 {
+    padding: 10px;
+  }
+  label {
+    padding: 5px;
   }
   @media (max-width: 768px) {
     width: 250px;
     height: 280px;
     justify-content: center;
     vertical-align: middle;
+    margin-top: 30px;
+    margin-left: 0;
     h3 {
       margin: 0;
       margin-bottom: 10px;

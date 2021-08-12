@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledProjects = styled.div`
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: 30px;
   text-align: center;
   .container-projects {
@@ -16,19 +16,25 @@ const StyledProjects = styled.div`
   h3 {
     margin-top: 22px;
     font-weight: bold;
-    color: #86b7f7;
     align-self: center;
   }
   h2 {
-    margin-top: 22px;
     font-weight: bold;
+    margin-bottom: 20px;
     color: #86b7f7;
     align-self: center;
   }
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    margin-top: 40px;
+    margin-top: 60px;
+    text-align: center;
     margin-left: 0;
+    padding-left: 0;
+    .container-projects {
+      margin-top: 20px;
+      display: flex;
+      flex-flow: column nowrap;
+    }
   }
 `;
 
