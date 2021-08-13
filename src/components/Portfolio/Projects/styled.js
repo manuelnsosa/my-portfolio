@@ -4,7 +4,7 @@ const StyledProjects = styled.div`
   background-color: none;
   color: black;
   width: 350px;
-  height: 500px;
+  height: 480px;
   border-radius: 20px;
   /*  border: 1.4px solid grey; */
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
@@ -13,6 +13,7 @@ const StyledProjects = styled.div`
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
+  margin-bottom: 30px;
   img {
     width: 330px;
     height: 220px;
@@ -74,6 +75,7 @@ const StyledProjects = styled.div`
     vertical-align: middle;
     margin-top: 30px;
     margin-left: 0;
+
     h3 {
       margin: 0;
       margin-bottom: 10px;

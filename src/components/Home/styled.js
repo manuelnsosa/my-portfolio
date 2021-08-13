@@ -33,7 +33,9 @@ export const StyledHome = styled.div`
 
   .container-img {
     height: 18%;
-    width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .manuel-pic {

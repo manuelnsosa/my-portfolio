@@ -27,14 +27,14 @@ const Projects = () => {
           >
             Github - Repository
           </a>
-          <a
+          {/* <a
             href="https://github.com/manuelnsosa/PI-Countries-FT13"
             target="_blank"
             rel="noreferrer"
             className="a2"
           >
             Demo
-          </a>
+          </a> */}
         </div>
       </StyledProjects>
       <br />
