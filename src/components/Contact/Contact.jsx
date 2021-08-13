@@ -26,13 +26,9 @@ const Contact = () => {
     if (re.test(String(contact.email).toLowerCase()) || contact.email === "") {
       modifyError(false);
     } else {
-      modifyError("should be a valid email adress");
+      modifyError("A valid email address is required");
     }
   }, [contact, modifyError]);
-
-  //check regular expressions for validation(email, etc)
-  //it should render a warning h3 when the info
-  //in an input is not valid
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -99,7 +95,7 @@ const Contact = () => {
                   className="form-control"
                   placeholder="Your email"
                 />
-                {showError.email}
+                <h6>{showError.email}</h6>
               </div>
             </div>
 
